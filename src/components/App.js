@@ -15,7 +15,7 @@ class App extends Component {
     };
 
     buttonClickHandler() {
-      this.setState({renderBall:true});
+      this.setState({renderBall : true});
 
    }
     renderBallOrButton() {
@@ -30,7 +30,7 @@ class App extends Component {
         if(evt.keyCode === 39){
           if(this.state.renderBall){
               const newPosI = this.state.posi + 5;
-              this.state({
+              this.setState({
                 posi: newPosI,
                 ballPosition:{left: newPosI + "px"}
               })
